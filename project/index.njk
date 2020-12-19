@@ -1,0 +1,10 @@
+{% extends "_includes/base.njk" %}
+
+{% block content %}
+{% import "_includes/macros.njk" as macro with context %}
+
+{# headline, subheadline, primaryBtnUrl,primaryBtnText,secondaryBtnUrl,secondaryBtnText,heroImage,alt #}
+{{ macro.cHeroSplitLeft('headline','subheadline','#','Buy Now','#','read more','https://images.ctfassets.net/f107dq97zt0a/6TdFkyWis5MfRKysG8pyXK/b0f8e1dee75a86c4d2ae223f47ea7163/lime_madrid_spain-317.jpg?w=1024&q=80','image alt') }}
+{{ macro.cHeroSplitRight('headline','subheadline','#','Buy Now','#','read more','https://images.ctfassets.net/f107dq97zt0a/6TdFkyWis5MfRKysG8pyXK/b0f8e1dee75a86c4d2ae223f47ea7163/lime_madrid_spain-317.jpg?w=1024&q=80','image alt') }}
+
+{% endblock %}

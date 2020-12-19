@@ -1,0 +1,15 @@
+{% extends 'layouts/base.njk' %}
+
+{% set metaTitle = site[locale].metaTitle %}
+{% set metaDescription = site[locale].metaDescription %}
+{% set metaImage = site[locale].metaImage %}
+{% block title %}Lime Home page{% endblock %}
+
+{% block content %}
+  <div class="fixed inset-0 flex justify-center items-center">
+    <div>
+      <span class="text-change">Good design</span><br/>
+      <span class="change">is<br/>as little design<br/>as possible</span>
+    </div>
+  </div>
+{% endblock %}

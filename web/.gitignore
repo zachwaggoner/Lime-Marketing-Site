@@ -72,3 +72,9 @@ yarn.lock
 
 # Static site
 _site
+
+#Temp Files
+_tmp/
+
+#Package
+package-lock.json

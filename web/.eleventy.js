@@ -2,6 +2,18 @@ const { DateTime } = require("luxon");
 const util = require('util')
 const CleanCSS = require("clean-css");
 
+module.exports = function (eleventyConfig) {
+  eleventyConfig.setUseGitIgnore(false);
+
+  eleventyConfig.addWatchTarget("./_tmp/style.css");
+
+  eleventyConfig.addPassthroughCopy({ "./_tmp/style.css": "./style.css" });
+
+  eleventyConfig.addShortcode("version", function () {
+    return String(Date.now());
+  });
+};
+
 module.exports = function(eleventyConfig) {
 
   // https://www.11ty.io/docs/quicktips/inline-css/
